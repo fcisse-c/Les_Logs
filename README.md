@@ -22,21 +22,20 @@ Apache : /var/log/apache2/access.log et /var/log/apache2/error.log
 
 Nginx : /var/log/nginx/access.log et /var/log/nginx/error.log
 
-Si besoin, tu peux ajuster la configuration des logs dans :
+Si besoin, ajuster la configuration des logs dans :
 
 Apache : /etc/apache2/apache2.conf
 
 Nginx : /etc/nginx/nginx.conf
 
  3. Génération de trafic
-Tu peux utiliser curl pour simuler du trafic :
-bash
-CopierModifier
-curl -s http://localhost > /dev/null
+    
+     Utiliser curl pour simuler du trafic :
+ ```bash
+ curl -s http://localhost > /dev/null
 
-curl -s http://localhost/nonexistentpage > /dev/null
-
-Ou un navigateur en visitant l'IP de la VM.
+ curl -s http://localhost/nonexistentpage > /dev/null
+   ```
 
 
 📊 4. Analyse des logs
